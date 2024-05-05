@@ -18,7 +18,7 @@ import static org.junit.Assert.assertArrayEquals;
 public class LanguagesTest {
 
     @Test
-    public void languagesAvailableTest() {
+    public void availableLanguagesTest() {
         final List<String> languages = List.of("简体中文", "繁體中文", "Pусский", "日本語", "한국어");
 
         for (WebDriver driver : getDrivers()) {

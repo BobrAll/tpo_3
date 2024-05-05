@@ -27,7 +27,7 @@ public class LegalDocumentsTest {
     }
 
     @Test
-    public void languagesAvailableTest() {
+    public void availableDocumentsTest() {
         List<String> documents = List.of("Document1", "Document2", "Document3");
 
         for (WebDriver driver : drivers) {
@@ -46,7 +46,6 @@ public class LegalDocumentsTest {
                     .toList();
 
             Assertions.assertArrayEquals(documents.toArray(), availableDocuments.toArray());
-            driver.quit();
         }
     }
 
